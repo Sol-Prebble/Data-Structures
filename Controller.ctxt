@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Controller
+comment0.text=\n\ The\ Controller\ class\ contains\ all\ of\ the\ logic\ for\ the\ program\n
+comment1.params=
+comment1.target=Controller()
+comment2.params=
+comment2.target=void\ setState()
+comment3.params=
+comment3.target=void\ resetState()
+comment4.params=
+comment4.target=void\ setOperation()
+comment4.text=\n\ Data\ Structure\ setter\n
+comment5.params=
+comment5.target=void\ run()
+comment5.text=\n\ Main\ switch\ statement\ contained\ in\ here\n
+comment6.params=
+comment6.target=void\ homepage()
+comment7.params=
+comment7.target=void\ stack()
+comment8.params=
+comment8.target=void\ handleOperation()
+comment9.params=
+comment9.target=java.lang.String\ input()
+comment9.text=\n\ asigns\ using\ input\ to\ a\ variable\ (String\ input)\n\ Purely\ used\ to\ make\ other\ code\ easier\ to\ read\n
+numComments=10

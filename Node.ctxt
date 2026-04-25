@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Node
+comment0.text=\n\ This\ is\ the\ Node\ class\n\ It\ creates\ objects\ for\ each\ data\ structure\ inside\ the\ project\n
+comment1.params=
+comment1.target=Node()
+comment1.text=For\ a\ node\ with\ no\ data\ input
+comment2.params=data
+comment2.target=Node(java.lang.String)
+comment2.text=For\ a\ node\ with\ a\ string\ input
+comment3.params=
+comment3.target=java.lang.String\ getData()
+comment3.text=Getters
+comment4.params=
+comment4.target=Node\ getNextNode()
+comment5.params=data
+comment5.target=void\ setData(java.lang.String)
+comment5.text=Setters
+comment6.params=n
+comment6.target=void\ setNextNode(Node)
+numComments=7

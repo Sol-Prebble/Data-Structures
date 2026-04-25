@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Operation
+comment0.text=\n\ This\ is\ the\ enum\ class\ that\ contains\ all\ of\ the\ possible\ states\ to\ be\ used\ by\ the\ Controller\ class\n
+comment1.params=alias
+comment1.target=Operation(java.lang.String)
+comment1.text=\n\ Contructors\n
+comment2.params=
+comment2.target=Operation()
+comment2.text=\n\ Constructor\ for\ constants\ WITHOUT\ an\ alias\n
+comment3.params=alias
+comment3.target=Operation\ fromAlias(java.lang.String)
+numComments=4

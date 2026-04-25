@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Stack
+comment0.text=\n\ This\ is\ the\ class\ for\ a\ 'stack'\ data\ structure\n\ It\ takes\ user\ input\ of\ data\ and\ adds\ it\ to\ the\ set\n\ It\ is\ a\ last\ in\ -\ last\ out\ data\ structure\n\ It\ utilises\ the\ node\ class\ to\ create\ the\ stack\n
+comment1.params=
+comment1.target=Stack()
+comment2.params=
+comment2.target=boolean\ isEmpty()
+comment3.params=data
+comment3.target=void\ push(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ pop()
+comment5.params=
+comment5.target=Node\ getTop()
+comment6.params=
+comment6.target=java.lang.String\ seeTop()
+numComments=7

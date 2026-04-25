@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=FileManager
+comment0.text=\n\ Contains\ functions\ that\ concern\ the\ file\ to\ contain\ account\ data\n\n\ @Sol\ Prebble\n\ @25/4/26\n
+comment1.params=data
+comment1.target=void\ writeStackToFile(java.lang.String)
+comment2.params=fileData
+comment2.target=void\ readStackFile(java.lang.String)
+numComments=3
