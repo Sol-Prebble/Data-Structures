@@ -21,20 +21,13 @@ public enum State{
     State(){
         this.alias = null;
     }
-    // /** 
-     // * Static method to find enum by alias 
-     // */
-    // public static State fromAlias(String alias) {
-        // for (State s : values()) {
-                // if (alias.equalsIgnoreCase(alias)) return(s);
-        // }
-        // return(null);
-    // }
+    /** 
+     * Static method to find enum by alias 
+     */
     public static State fromAlias(String alias) {
-    for (State s : values()) {
-        System.out.println("Comparing [" + alias + "] with alias [" + s.alias + "]"); // trace each comparison
-        if (alias.equalsIgnoreCase(s.alias)) return s;
-    }
-    return null;
+        for (State s : values()) {
+            if (alias.equalsIgnoreCase(s.alias)) return s;
+        }
+        return null;
     }
 }

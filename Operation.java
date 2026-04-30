@@ -4,7 +4,8 @@
 public enum Operation{
     PUSH("+"),
     POP("-"),
-    VIEW("=");
+    VIEW("="),
+    RETURN("x");
     
     private final String alias;
     

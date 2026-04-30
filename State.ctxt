@@ -1,12 +1,13 @@
 #BlueJ class context
 comment0.target=State
-comment0.text=\r\n\ This\ is\ the\ enum\ class\ that\ contains\ all\ of\ the\ data\ structures\ that\ can\ be\ used\ by\ this\ program\r\n
+comment0.text=\n\ This\ is\ the\ enum\ class\ that\ contains\ all\ of\ the\ data\ structures\ that\ can\ be\ used\ by\ this\ program\n
 comment1.params=alias
 comment1.target=State(java.lang.String)
-comment1.text=\r\n\ Contructors\r\n
+comment1.text=\n\ Contructors\n
 comment2.params=
 comment2.target=State()
-comment2.text=\r\n\ Constructor\ for\ constants\ WITHOUT\ an\ alias\r\n
+comment2.text=\n\ Constructor\ for\ constants\ WITHOUT\ an\ alias\n
 comment3.params=alias
 comment3.target=State\ fromAlias(java.lang.String)
+comment3.text=\ \n\ Static\ method\ to\ find\ enum\ by\ alias\ \n
 numComments=4

@@ -47,6 +47,7 @@ public class Controller{
             switch(currentState){
                 case HOMEPAGE -> homepage();
                 case  STACK -> stack();
+                case QUEUE -> queue();
                 case CLOSE -> runGame = false;
             }
         }
@@ -60,9 +61,10 @@ public class Controller{
     }
     public void handleOperation(){
         System.out.println("What do you want to do?");
-        System.out.println("[+] - push");
-        System.out.println("[-] - pop");
+        System.out.println("[+] - add");
+        System.out.println("[-] - remove");
         System.out.println("[=] - view");
+        System.out.println("[x] - return");
         setOperation();
     }
     public void stack(){
@@ -71,15 +73,20 @@ public class Controller{
         switch(currentOperation){
             case PUSH -> stack.push(input());
             case POP -> stack.pop();
+            case RETURN -> resetState();
         }
         main.stackData += stack.seeTop();
-        resetState();
     }
     public void queue(){
-        
+        Queue queue = new Queue();
+        handleOperation();
+        switch(currentOperation){
+            case PUSH:
+                Node newNode = new Node(input());
+                queue.enqueue(newNode);
+                    break;
+        }
     }
-    
-    
     /**
      * asigns using input to a variable (String input)
      * Purely used to make other code easier to read

@@ -24,6 +24,7 @@ public class Queue{
         }
         else{
             this.tail.setNextNode(newNode);
+            this.tail = newNode;
         }
     }
 }

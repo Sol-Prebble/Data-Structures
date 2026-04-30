@@ -1,22 +1,22 @@
 #BlueJ class context
 comment0.target=Controller
-comment0.text=\r\n\ The\ Controller\ class\ contains\ all\ of\ the\ logic\ for\ the\ program\r\n
+comment0.text=\n\ The\ Controller\ class\ contains\ all\ of\ the\ logic\ for\ the\ program\n
 comment1.params=
 comment1.target=Controller()
 comment10.params=
 comment10.target=java.lang.String\ input()
-comment10.text=\r\n\ asigns\ using\ input\ to\ a\ variable\ (String\ input)\r\n\ Purely\ used\ to\ make\ other\ code\ easier\ to\ read\r\n
+comment10.text=\n\ asigns\ using\ input\ to\ a\ variable\ (String\ input)\n\ Purely\ used\ to\ make\ other\ code\ easier\ to\ read\n
 comment2.params=
 comment2.target=void\ setState()
-comment2.text=\r\n\ State\ setter\r\n
+comment2.text=\n\ State\ setter\n
 comment3.params=
 comment3.target=void\ setOperation()
-comment3.text=\r\n\ Data\ Structure\ setter\r\n
+comment3.text=\n\ Data\ Structure\ setter\n
 comment4.params=
 comment4.target=void\ resetState()
 comment5.params=
 comment5.target=void\ run()
-comment5.text=\r\n\ Main\ switch\ statement\ contained\ in\ here\r\n
+comment5.text=\n\ Main\ switch\ statement\ contained\ in\ here\n
 comment6.params=
 comment6.target=void\ homepage()
 comment7.params=
