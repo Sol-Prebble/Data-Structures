@@ -36,5 +36,5 @@ public enum State{
         if (alias.equalsIgnoreCase(s.alias)) return s;
     }
     return null;
-}
+    }
 }

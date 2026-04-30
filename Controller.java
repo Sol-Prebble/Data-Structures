@@ -9,34 +9,20 @@ public class Controller{
     public Controller(){
         this.currentState = State.HOMEPAGE; // default state
     }
-    
-    // /**
-     // * State setter
-     // */
-    // public void setState(){
-        // State newState = State.fromAlias(input().toUpperCase());
-        // if(newState != null){
-            // this.currentState = newState;
-        // } else {
-            // System.out.println("invalid input, please try again");
-        // }
-    // }
+    /**
+     * State setter
+     */
     public void setState(){
-    String rawInput = input();
-    System.out.println("Raw input: [" + rawInput + "]");         // check for hidden spaces
-    String processedInput = rawInput.toUpperCase().trim();        // trim any whitespace
-    System.out.println("Processed input: [" + processedInput + "]");
-    State newState = State.fromAlias(processedInput);
-    System.out.println("Resolved state: " + newState);           // check what fromAlias returns
-    if(newState != null){
-        this.currentState = newState;
-        System.out.println("State set to: " + this.currentState);
-    } else {
-        System.out.println("invalid input, please try again");
-    }
-}
-    public void resetState(){
-        this.currentState = State.HOMEPAGE;
+        String rawInput = input();
+        String processedInput = rawInput.toUpperCase().trim(); // trim whitespace
+        State newState = State.fromAlias(processedInput);
+        
+        if(newState != null){
+            this.currentState = newState;
+            System.out.println("State set to: " + this.currentState);
+        } else {
+            System.out.println("invalid input, please try again");
+        }
     }
     /**
      * Data Structure setter
@@ -49,7 +35,9 @@ public class Controller{
             System.out.println("invalid input, please try again");
         }
     }
-    
+    public void resetState(){
+        this.currentState = State.HOMEPAGE;
+    }
     /**
      * Main switch statement contained in here
      */
@@ -70,6 +58,13 @@ public class Controller{
         System.out.println("[close] - Close the program");
         setState();
     }
+    public void handleOperation(){
+        System.out.println("What do you want to do?");
+        System.out.println("[+] - push");
+        System.out.println("[-] - pop");
+        System.out.println("[=] - view");
+        setOperation();
+    }
     public void stack(){
         Stack stack = new Stack();
         handleOperation();
@@ -80,13 +75,11 @@ public class Controller{
         main.stackData += stack.seeTop();
         resetState();
     }
-    public void handleOperation(){
-        System.out.println("What do you want to do?");
-        System.out.println("[+] - push");
-        System.out.println("[-] - pop");
-        System.out.println("[=] - view");
-        setOperation();
+    public void queue(){
+        
     }
+    
+    
     /**
      * asigns using input to a variable (String input)
      * Purely used to make other code easier to read

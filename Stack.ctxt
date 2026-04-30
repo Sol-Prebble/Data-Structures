@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Stack
-comment0.text=\n\ This\ is\ the\ class\ for\ a\ 'stack'\ data\ structure\n\ It\ takes\ user\ input\ of\ data\ and\ adds\ it\ to\ the\ set\n\ It\ is\ a\ last\ in\ -\ last\ out\ data\ structure\n\ It\ utilises\ the\ node\ class\ to\ create\ the\ stack\n
+comment0.text=\r\n\ This\ is\ the\ class\ for\ a\ 'stack'\ data\ structure\r\n\ It\ takes\ user\ input\ of\ data\ and\ adds\ it\ to\ the\ set\r\n\ It\ is\ a\ last\ in\ -\ last\ out\ data\ structure\r\n\ It\ utilises\ the\ node\ class\ to\ create\ the\ stack\r\n
 comment1.params=
 comment1.target=Stack()
 comment2.params=
