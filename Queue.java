@@ -12,24 +12,32 @@ public class Queue{
     public Queue(){
         // Left empty
     }
-    private void checkEmpty(Queue myQueue){
-        if(isEmpty()){
-            System.out.println("Queue is empty");
-        } else System.out.println("Queue is not empty");
-    }
     public boolean isEmpty(){
         return(this.head==null);
     }
     public int getSize(){
         int sizeCount = 0;
-        Queue temp = this;
+        Queue temp = new Queue();
+        temp = this;
         while(!temp.isEmpty()){
-            System.out.println(sizeCount);
             sizeCount++;
             temp.dequeue();
-            System.out.println(sizeCount);
+            //System.out.println(sizeCount);
         }
         return(sizeCount);
+    }
+    public String getFullQueue(){
+        Queue temp = new Queue();
+        temp = this;
+        String queueData = "[";
+        System.out.println(temp.head.getData());
+        while(!temp.isEmpty()){
+            queueData += temp.head.getData();
+            temp.dequeue();
+            queueData += ", ";
+        }
+        queueData += "]";
+        return(queueData);
     }
     public void enqueue(Node newNode){
         if(isEmpty()){
@@ -37,6 +45,13 @@ public class Queue{
             this.tail = newNode;
         }
         else{
+            Queue temp = this;
+            System.out.println("newNode importance: "+newNode.getImportance());
+            System.out.println("temp importance: "+temp.head.getImportance());
+            while(newNode.getImportance() != temp.head.getImportance()){
+                temp.head = temp.head.getNextNode();
+            }
+            System.out.println("success "+temp.head.getData());
             this.tail.setNextNode(newNode);
             this.tail = newNode;
         }
@@ -45,10 +60,10 @@ public class Queue{
         if(isEmpty()){
             return(null);
         } else {
-            Node temp = this.head;
-            this.head = temp.getNextNode();
-            System.out.println("dequeue method temp: "+temp.getData());
-            return temp;
+            Node node = this.head;
+            this.head = node.getNextNode();
+            System.out.println("dequeue method node: "+node.getData());
+            return node;
         }
     }
 }

@@ -4,6 +4,7 @@
  */
 public class Node{
     private String data;
+    private int importance;
     private Node next;
 
     /* Constructors */
@@ -15,10 +16,18 @@ public class Node{
     public Node(String data){
         this.data = data;
     }
-
+    /* For a node with a string input */
+    public Node(String data, int importance){
+        this.data = data;
+        this.importance = importance;
+    }
+    
     /* Getters */
     public String getData(){
         return(this.data);
+    }
+    public int getImportance(){
+        return(this.importance);
     }
     public Node getNextNode(){
         return(this.next);
@@ -27,6 +36,9 @@ public class Node{
     /* Setters */
     public void setData(String data){
         this.data = data;
+    }
+    public void setImportance(int importance){
+        this.importance = importance;
     }
     public void setNextNode(Node n){
         this.next = n;

@@ -10,25 +10,30 @@ public class testingQueues
     public static void main(String[] args){
         Queue myQueue = new Queue();
         checkEmpty(myQueue);
-        Scanner keyboard = new Scanner(System.in);
-        String input;
-        System.out.println("Please enter a value:");
-        input = keyboard.nextLine();
-        System.out.println("test1");
-        Node newNode = new Node(input);
-        System.out.println("test2");
-        myQueue.enqueue(newNode);
-        System.out.println("test3");
-            
+        
+        add(myQueue);
+        add(myQueue);
         //myQueue.dequeue();
-        System.out.println("test4");
-        System.out.println(myQueue.getSize());
-        System.out.println("test5");
-        checkEmpty(myQueue);
+        //System.out.println(myQueue.getSize());
+        //checkEmpty(myQueue);
+        System.out.println(myQueue.getFullQueue());
     }
     private static void checkEmpty(Queue myQueue){
         if(myQueue.isEmpty()){
             System.out.println("Queue is empty");
         } else System.out.println("Queue is not empty");
+    }
+    private static void add(Queue myQueue){
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Please enter the data:");
+        String data;
+        data = keyboard.nextLine();
+        
+        System.out.println("Please enter importance level 1-3:");
+        int importance;
+        importance = keyboard.nextInt();
+        
+        Node newNode = new Node(data, importance);
+        myQueue.enqueue(newNode);
     }
 }
